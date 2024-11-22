@@ -1,8 +1,8 @@
 """Creating business_symptom table
 
-Revision ID: de5b9513a609
+Revision ID: 806ae3624163
 Revises: 
-Create Date: 2024-11-22 14:04:57.748585
+Create Date: 2024-11-22 15:32:23.364895
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'de5b9513a609'
+revision = '806ae3624163'
 down_revision = None
 branch_labels = None
 depends_on = None

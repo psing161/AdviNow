@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-UPLOAD_DIR = '/Users/pratimasingh/Documents/Internship/interview-challenge-v2/upload_csv/'
+UPLOAD_DIR = 'your_path/upload_csv/'
 
 
 def get_env(variable_name, default=None):
@@ -24,9 +24,9 @@ def get_env(variable_name, default=None):
 
 # MySql
 os.environ['DB_NAME'] = 'AdviNowDB'
-DB_HOST = get_env("DB_HOST", "127.0.0.1")
-DB_NAME = get_env("DB_NAME", "AdviNowDB")
-DB_USER = get_env("DB_USER", "root")
-DB_PASSWORD = get_env("DB_PWD", "root")
+DB_HOST = get_env("DB_HOST", "your_host")
+DB_NAME = get_env("DB_NAME", "your_db")
+DB_USER = get_env("DB_USER", "your_username")
+DB_PASSWORD = get_env("DB_PWD", "your_password")
 
 DB_URL: str = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
